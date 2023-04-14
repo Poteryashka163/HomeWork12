@@ -1,5 +1,6 @@
 public class Main {
-    public static Book
+
+
     public static void main(String[] args) {
 //        String authorName1 ="Илья ";
 //        String authorSurname1 ="Соломенный";
@@ -15,14 +16,18 @@ public class Main {
 //        int year3 =2016;
 //        System.out.println("____________________ ");
 
+        Author bookFio1 = new Author("Илья","Соломенный");
+        Book book1 = new Book("Нейросити", 2022,bookFio1);
+        System.out.println(bookFio1.getName()+" "+bookFio1.getSurname()+" "+book1.getTitle()+" "+book1.getYearPublication());
 
-        Book book1 = new Book();
-        Author bookFio1 = new Author();
-        bookFio1.name = "Илья";
-        bookFio1.surname = "Соломенный";
-        book1.title="Нейросити";
-        book1.yearPublication=2022;
-        System.out.println(bookFio1.name+" "+bookFio1.surname+" "+book1.title+" "+book1.yearPublication);
+        Author bookFio2 = new Author("Артем","Кочеровский");
+        Book book2 = new Book("Приемный", 2021,bookFio2);
+        System.out.println(bookFio2.name+" "+bookFio2.surname+" "+book2.title+" "+book2.getYearPublication());
+        book2.setYearPublication(2022);
+        System.out.println(book2.getYearPublication());
 
+        Author bookFio3 = new Author("Павел","Корнев");
+        Book book3 = new Book("Экзорцист", 2016,bookFio2);
+        System.out.println(bookFio3.name+" "+bookFio3.surname+" "+book3.title+" "+book3.getYearPublication());
     }
 }
