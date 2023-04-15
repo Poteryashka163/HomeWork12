@@ -1,5 +1,5 @@
 public class Book {
-    String title;
+    private String title;
     private int yearPublication;
 
     public Book(String title, int yearPublication, Author author) {

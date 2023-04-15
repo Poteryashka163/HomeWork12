@@ -22,12 +22,12 @@ public class Main {
 
         Author bookFio2 = new Author("Артем","Кочеровский");
         Book book2 = new Book("Приемный", 2021,bookFio2);
-        System.out.println(bookFio2.name+" "+bookFio2.surname+" "+book2.title+" "+book2.getYearPublication());
+        System.out.println(bookFio2.getName()+" "+bookFio2.getSurname()+" "+book2.getTitle()+" "+book2.getYearPublication());
         book2.setYearPublication(2022);
         System.out.println(book2.getYearPublication());
 
         Author bookFio3 = new Author("Павел","Корнев");
         Book book3 = new Book("Экзорцист", 2016,bookFio2);
-        System.out.println(bookFio3.name+" "+bookFio3.surname+" "+book3.title+" "+book3.getYearPublication());
+        System.out.println(bookFio3.getName()+" "+bookFio3.getSurname()+" "+book3.getTitle()+" "+book3.getYearPublication());
     }
 }
