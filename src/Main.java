@@ -29,5 +29,33 @@ public class Main {
         Author bookFio3 = new Author("Павел","Корнев");
         Book book3 = new Book("Экзорцист", 2016,bookFio2);
         System.out.println(bookFio3.getName()+" "+bookFio3.getSurname()+" "+book3.getTitle()+" "+book3.getYearPublication());
+        System.out.println("------------------------------------ ");
+
+        System.out.println(bookFio1+" "+book1);
+        System.out.println(bookFio2+" "+book2);
+        System.out.println(bookFio3+" "+book3);
+        System.out.println("------------------------------------ ");
+
+        System.out.println(bookFio1.equals(book1));
+
+        Author bookFio4 = new Author("Павел","Корнеев");
+        Book book4 = new Book("Экзорцист", 2016,bookFio2);
+        System.out.println(bookFio4.getName()+" "+bookFio4.getSurname()+" "+book4.getTitle()+" "+book4.getYearPublication());
+
+        System.out.println(book3.equals(book4)+" "+bookFio3.equals(bookFio4));
+
+        System.out.println("------------------------------------ ");
+
+
+        boolean isHashcodeEquals = book3.hashCode() == book1.hashCode();
+
+        if (isHashcodeEquals) {
+            System.out.println("Следует сравнить методом equals.");
+        } else {
+            System.out.println("Не следует сравнивать методом equals, т.к. " +
+                    "идентификатор отличается, что означает, что объекты точно не равны.");
+        }
+
+
     }
 }
