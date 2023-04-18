@@ -31,9 +31,9 @@ public class Main {
         System.out.println(bookFio3.getName()+" "+bookFio3.getSurname()+" "+book3.getTitle()+" "+book3.getYearPublication());
         System.out.println("------------------------------------ ");
 
-        System.out.println(bookFio1+" "+book1);
-        System.out.println(bookFio2+" "+book2);
-        System.out.println(bookFio3+" "+book3);
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
         System.out.println("------------------------------------ ");
 
         System.out.println(bookFio1.equals(book1));
