@@ -1,9 +1,9 @@
 import java.util.Objects;
 
 public class Book {
-    final String title;
+    private final String title;
     private int yearPublication;
-    final Author author;
+    private final Author author;
 
     public Book(String title, int yearPublication, Author author) {
         this.title = title;
